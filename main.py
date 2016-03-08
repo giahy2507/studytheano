@@ -4,6 +4,14 @@ import numpy as np
 from theano.tensor.nnet import conv
 from tensorflow.examples.tutorials.mnist import input_data
 
+class LenetConvPoolLayer(object):
+    def __init__(self, input, input_shape, filter_shape, pool_shape ,activation = T.tanh):
+        self.input = input
+        self.input_shape = input_shape
+        self.filter_shape = filter_shape
+        self.pool_shape = pool_shape
+
+
 class FullConectedLayer(object):
     def __init__(self, input, n_in, n_out, activation = T.tanh):
         self.W = theano.shared(value= np.asarray(np.random.rand(n_in,n_out)/np.sqrt(n_in+1),dtype=theano.config.floatX),
