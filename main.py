@@ -2,15 +2,41 @@ import theano
 import theano.tensor as T
 import numpy as np
 from theano.tensor.nnet import conv
+from theano.tensor.signal import downsample
 from tensorflow.examples.tutorials.mnist import input_data
 
 class LenetConvPoolLayer(object):
-    def __init__(self, input, input_shape, filter_shape, pool_shape ,activation = T.tanh):
+    def __init__(self, rng , input, input_shape, filter_shape, pool_shape ,activation = T.tanh):
         self.input = input
         self.input_shape = input_shape
         self.filter_shape = filter_shape
         self.pool_shape = pool_shape
 
+        assert input_shape[1] == filter_shape[1]
+        self.input = input
+
+        fan_in = np.prod(filter_shape[1:])
+        fan_out = (filter_shape[0] * np.prod(filter_shape[2:]) /
+                   np.prod(pool_shape))
+        # initialize weights with random weights
+        W_bound = np.sqrt(6. / (fan_in + fan_out))
+        self.W = theano.shared(np.asarray(
+            rng.uniform(low=-W_bound, high=W_bound, size=filter_shape),
+            dtype=theano.config.floatX),
+                               borrow=True)
+
+        b_values = np.zeros((filter_shape[0],), dtype=theano.config.floatX)
+        self.b = theano.shared(value=b_values, borrow=True)
+
+         # convolve input feature maps with filters
+        conv_out = conv.conv2d(input=input, filters=self.W, filter_shape=filter_shape, image_shape=input_shape)
+
+        # downsample each feature map individually, using maxpooling
+        pooled_out = downsample.max_pool_2d(input=conv_out, ds=pool_shape, ignore_border=True)
+
+        self.output = T.tanh(pooled_out + self.b.dimshuffle('x', 0, 'x', 'x'))
+
+        self.params = [self.W, self.b]
 
 class FullConectedLayer(object):
     def __init__(self, input, n_in, n_out, activation = T.tanh):
