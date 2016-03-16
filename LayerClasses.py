@@ -7,7 +7,7 @@ from tensorflow.examples.tutorials.mnist import input_data
 
 class MyConvLayer(object):
 
-    def __init__(self, rng, input, image_shape, filter_shape, border_mode = "valid", activation = T.tanh):
+    def __init__(self, rng, input, image_shape, filter_shape, border_mode = "valid", activation = T.tanh, params = None):
 
         self.input = input
 
@@ -24,14 +24,15 @@ class MyConvLayer(object):
 
         # initialize weights with random weights
         W_bound = np.sqrt(6. / (fan_in + fan_out))
-        self.W = theano.shared(np.asarray(
-            rng.uniform(low=-W_bound, high=W_bound, size=filter_shape),
-            dtype=theano.config.floatX),
-                               borrow=True)
         b_values = np.zeros((filter_shape[0],), dtype=theano.config.floatX)
-
-
-        self.b = theano.shared(value=b_values, borrow=True)
+        if params[0] == None:
+            self.W = theano.shared(np.asarray(
+                rng.uniform(low=-W_bound, high=W_bound, size=filter_shape),
+                dtype=theano.config.floatX),
+                                   borrow=True)
+            self.b = theano.shared(value=b_values, borrow=True)
+        else:
+            self.W, self.b = params[0], params[1]
 
         self.conv_out = conv.conv2d(input=input, filters=self.W, filter_shape=filter_shape, image_shape=image_shape, border_mode=border_mode)
 
@@ -186,14 +187,17 @@ class LenetConvPoolLayer(object):
         self.params = [self.W, self.b]
 
 class FullConectedLayer(object):
-    def __init__(self, input, n_in, n_out, activation = T.tanh):
-        self.W = theano.shared(value= np.asarray(np.random.rand(n_in,n_out)/np.sqrt(n_in+1),dtype=theano.config.floatX),
-                               name = "W",
-                               borrow=True)
-        self.b = theano.shared(value= np.asarray(np.random.rand(n_out,) ,dtype=theano.config.floatX),
-                               name ="b",
-                               borrow=True
-        )
+    def __init__(self, input, n_in, n_out, activation = T.tanh, params = None):
+        if params[0] == None:
+            self.W = theano.shared(value= np.asarray(np.random.rand(n_in,n_out)/np.sqrt(n_in+1),dtype=theano.config.floatX),
+                                   name = "W",
+                                   borrow=True)
+            self.b = theano.shared(value= np.asarray(np.random.rand(n_out,) ,dtype=theano.config.floatX),
+                                   name ="b",
+                                   borrow=True
+            )
+        else:
+            self.W, self.b = params[0], params[1]
         self.input = input
         self.output = activation(T.dot(input,self.W) + self.b)
         self.params = [self.W, self.b]

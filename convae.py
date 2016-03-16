@@ -6,6 +6,8 @@ import numpy as np
 from LayerClasses import MyConvLayer,FullConectedLayer
 from tensorflow.examples.tutorials.mnist import input_data
 from sys import stderr
+import cPickle
+import os
 
 if __name__ == "__main__":
 
@@ -23,24 +25,29 @@ if __name__ == "__main__":
     filter_shape_decode = (1,20,5,28)
 
     rng = np.random.RandomState(23455)
+    params_save = [None]*8
+
+    if os.path.isfile("saveweight.bin"):
+        with open("saveweight.bin",mode="rb") as f:
+            params_save = cPickle.load(f)
 
     # minibatch)
     X = T.dmatrix('X')  # data, presented as rasterized images
 
     layer0_encode_input = X.reshape((batch_size, 1, 28, 28))
-    layer0_encode = MyConvLayer(rng,layer0_encode_input,image_shape=image_shape,filter_shape=filter_shape_encode,border_mode="valid",activation = T.nnet.sigmoid)
+    layer0_encode = MyConvLayer(rng,layer0_encode_input,image_shape=image_shape,filter_shape=filter_shape_encode,border_mode="valid",activation = T.nnet.sigmoid, params=params_save[0:2])
 
     layer1_encode_input = layer0_encode.output.flatten(2)
     layer1_encode_input_shape = (batch_size,layer0_encode.output_shape[1] * layer0_encode.output_shape[2] * layer0_encode.output_shape[3])
-    layer1_encode = FullConectedLayer(layer1_encode_input,layer1_encode_input_shape[1],100,activation = T.nnet.sigmoid)
+    layer1_encode = FullConectedLayer(layer1_encode_input,layer1_encode_input_shape[1],100,activation = T.nnet.sigmoid, params=params_save[2:4])
 
     layer1_decode_input_shape = (batch_size, 100)
     layer2_decode_input = layer1_encode.output
-    layer2_decode = FullConectedLayer(layer2_decode_input,100,layer1_encode_input_shape[1],activation = T.nnet.sigmoid)
+    layer2_decode = FullConectedLayer(layer2_decode_input,100,layer1_encode_input_shape[1],activation = T.nnet.sigmoid,  params=params_save[4:6])
 
     layer3_decode_input = layer2_decode.output.reshape(layer0_encode.output_shape)
-    layer3_decode = MyConvLayer(rng,layer3_decode_input,image_shape=layer0_encode.output_shape,filter_shape=filter_shape_decode,border_mode="full",activation = T.nnet.sigmoid)
-    
+    layer3_decode = MyConvLayer(rng,layer3_decode_input,image_shape=layer0_encode.output_shape,filter_shape=filter_shape_decode,border_mode="full",activation = T.nnet.sigmoid,  params=params_save[6:8])
+
     mae = T.mean(T.sqrt(T.sum(T.sqr(layer3_decode.output.flatten(2) - X), axis=1)), axis=0)
     
     cost = mae + 0.001*(layer0_encode.L2 + layer1_encode.L2 + layer2_decode.L2 + layer3_decode.L2)
@@ -63,7 +70,7 @@ if __name__ == "__main__":
 
     counter = 0
     best_valid_err = 100
-    early_stop = 30
+    early_stop = 10
 
     epoch_i = 0
 
@@ -84,9 +91,11 @@ if __name__ == "__main__":
             best_valid_err = val_mae
             print >> stderr, "Epoch "+str(epoch_i)+" Train cost: "+ str(np.mean(np.array(train_costs)))+ "Train mae: "+ str(np.mean(np.array(train_maes))) + " Validation cost: "+ str(valid_cost)+" Validation mae "+ str(val_mae)  + ",counter "+str(counter)+ " __best__ "
             counter = 0
+            with open("saveweight.bin", mode="wb") as f:
+                cPickle.dump(params,f)
         else:
             counter +=1
-            print >> stderr, "Epoch "+str(epoch_i)+" Train cost: "+ str(np.mean(np.array(train_costs)))+ " Validation cost: "+ str(valid_cost)+ ",counter "+str(counter)
+            print >> stderr, "Epoch "+str(epoch_i)+" Train cost: "+ str(np.mean(np.array(train_costs)))+ "Train mae: "+ str(np.mean(np.array(train_maes))) + " Validation cost: "+ str(valid_cost)+" Validation mae "+ str(val_mae)  + ",counter "+str(counter)
 
 
 
