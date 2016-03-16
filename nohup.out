@@ -1,0 +1,212 @@
+readed data
+Epoch 1 Train cost: 11.145580058Train mae: 10.9722296337 Validation cost: 10.5106508382 Validation mae 10.3577316449,counter 0 __best__ 
+Epoch 2 Train cost: 10.5074308926Train mae: 10.3714656986 Validation cost: 10.0928948089 Validation mae 9.97320489186,counter 0 __best__ 
+Epoch 3 Train cost: 10.775619651Train mae: 10.6687108622 Validation cost: 10.0650105303 Validation mae 9.97036779484,counter 0 __best__ 
+Epoch 4 Train cost: 9.75209633367Train mae: 9.66838356822 Validation cost: 9.47566381201 Validation mae 9.40144162629,counter 0 __best__ 
+Epoch 5 Train cost: 9.60370595429Train mae: 9.53843427794 Validation cost: 8.94374384631 Validation mae 8.88660120234,counter 0 __best__ 
+Epoch 6 Train cost: 9.36038181059 Validation cost: 8.93812562546,counter 1
+Epoch 7 Train cost: 9.26047829815 Validation cost: 9.0664626952,counter 2
+Epoch 8 Train cost: 9.27507468536 Validation cost: 9.50025326383,counter 3
+Epoch 9 Train cost: 9.24060562754 Validation cost: 9.43807410779,counter 4
+Epoch 10 Train cost: 9.23520273752 Validation cost: 9.23854431346,counter 5
+Epoch 11 Train cost: 9.23003287019Train mae: 9.21559726416 Validation cost: 8.53147526789 Validation mae 8.51864964394,counter 5 __best__ 
+Epoch 12 Train cost: 9.22998567054 Validation cost: 9.1890047465,counter 1
+Epoch 13 Train cost: 9.2207538031 Validation cost: 10.2373897522,counter 2
+Epoch 14 Train cost: 9.22203930797 Validation cost: 10.3304676258,counter 3
+Epoch 15 Train cost: 9.21698671212 Validation cost: 9.17310710502,counter 4
+Epoch 16 Train cost: 9.21849923049 Validation cost: 8.99244777204,counter 5
+Epoch 17 Train cost: 9.20865639676 Validation cost: 8.7466940622,counter 6
+Epoch 18 Train cost: 9.20875754625 Validation cost: 8.99573858912,counter 7
+Epoch 19 Train cost: 9.16958493975 Validation cost: 8.96673219876,counter 8
+Epoch 20 Train cost: 8.95028239515 Validation cost: 9.20214315525,counter 9
+Epoch 21 Train cost: 8.06388681354Train mae: 8.04270534787 Validation cost: 7.36739774464 Validation mae 7.33987383042,counter 9 __best__ 
+Epoch 22 Train cost: 7.30336432739Train mae: 7.27514984887 Validation cost: 7.25528532334 Validation mae 7.22690601628,counter 0 __best__ 
+Epoch 23 Train cost: 7.29772874001 Validation cost: 7.49078816021,counter 1
+Epoch 24 Train cost: 7.29269274709Train mae: 7.26256488606 Validation cost: 7.19571812265 Validation mae 7.1650865067,counter 1 __best__ 
+Epoch 25 Train cost: 7.28271966176 Validation cost: 7.2871074635,counter 1
+Epoch 26 Train cost: 7.27757011132 Validation cost: 7.37990378007,counter 2
+Epoch 27 Train cost: 7.27786364924 Validation cost: 7.22849871621,counter 3
+Epoch 28 Train cost: 7.2745651708 Validation cost: 7.46768561523,counter 4
+Epoch 29 Train cost: 7.27035961276 Validation cost: 7.5567761766,counter 5
+Epoch 30 Train cost: 7.27319357946Train mae: 7.24178904375 Validation cost: 6.98193945624 Validation mae 6.95038672555,counter 5 __best__ 
+Epoch 31 Train cost: 7.26957382648 Validation cost: 7.16904495411,counter 1
+Epoch 32 Train cost: 7.27002991916Train mae: 7.23824028337 Validation cost: 6.90853650977 Validation mae 6.87650536987,counter 1 __best__ 
+Epoch 33 Train cost: 7.26649424896 Validation cost: 6.91784214011,counter 1
+Epoch 34 Train cost: 7.26476746336 Validation cost: 7.24327115223,counter 2
+Epoch 35 Train cost: 7.26467870563Train mae: 7.23120510658 Validation cost: 6.88365773914 Validation mae 6.84941655244,counter 2 __best__ 
+Epoch 36 Train cost: 7.26138908346 Validation cost: 7.31533719949,counter 1
+Epoch 37 Train cost: 7.25827859359 Validation cost: 7.7856687727,counter 2
+Epoch 38 Train cost: 7.25823444582 Validation cost: 7.39139641229,counter 3
+Epoch 39 Train cost: 7.24533317862 Validation cost: 7.06444703695,counter 4
+Epoch 40 Train cost: 7.23181781157 Validation cost: 6.94225056914,counter 5
+Epoch 41 Train cost: 7.15086631002 Validation cost: 7.04404195498,counter 6
+Epoch 42 Train cost: 7.02802394409 Validation cost: 6.9435517356,counter 7
+Epoch 43 Train cost: 6.984805131 Validation cost: 7.40018974028,counter 8
+Epoch 44 Train cost: 6.89613726791Train mae: 6.79812301077 Validation cost: 6.73134848963 Validation mae 6.61966378119,counter 8 __best__ 
+Epoch 45 Train cost: 6.69711421291Train mae: 6.57319376891 Validation cost: 6.71504590128 Validation mae 6.57968678096,counter 0 __best__ 
+Epoch 46 Train cost: 6.50378819929Train mae: 6.35507169392 Validation cost: 6.54074142078 Validation mae 6.38101735456,counter 0 __best__ 
+Epoch 47 Train cost: 6.31437959654Train mae: 6.14154616931 Validation cost: 6.52343339719 Validation mae 6.33708907816,counter 0 __best__ 
+Epoch 48 Train cost: 6.07583089784Train mae: 5.86939608348 Validation cost: 6.4814338961 Validation mae 6.25499589785,counter 0 __best__ 
+Epoch 49 Train cost: 5.86337344767Train mae: 5.62161198651 Validation cost: 6.32476758086 Validation mae 6.06792734425,counter 0 __best__ 
+Epoch 50 Train cost: 5.71222959497Train mae: 5.43795757951 Validation cost: 5.3868048863 Validation mae 5.09093154155,counter 0 __best__ 
+Epoch 51 Train cost: 5.52744548616 Validation cost: 5.48330960261,counter 1
+Epoch 52 Train cost: 5.33908919456Train mae: 4.97484249098 Validation cost: 5.0345442011 Validation mae 4.64889561823,counter 1 __best__ 
+Epoch 53 Train cost: 5.17835677898 Validation cost: 5.09286950296,counter 1
+Epoch 54 Train cost: 5.04081774816Train mae: 4.58474275836 Validation cost: 4.82870633182 Validation mae 4.34855334096,counter 1 __best__ 
+Epoch 55 Train cost: 4.88621941955Train mae: 4.38461084873 Validation cost: 4.71626661895 Validation mae 4.19482683515,counter 0 __best__ 
+Epoch 56 Train cost: 4.77371152016Train mae: 4.23575066249 Validation cost: 4.5572684447 Validation mae 4.00261231844,counter 0 __best__ 
+Epoch 57 Train cost: 4.68589028298Train mae: 4.11611195894 Validation cost: 4.561680536 Validation mae 3.97671514821,counter 0 __best__ 
+Epoch 58 Train cost: 4.6163646024Train mae: 4.01638492169 Validation cost: 4.37897752485 Validation mae 3.76437294363,counter 0 __best__ 
+Epoch 59 Train cost: 4.54230886786 Validation cost: 4.64321499937,counter 1
+Epoch 60 Train cost: 4.48085447341Train mae: 3.81913518397 Validation cost: 4.28412432755 Validation mae 3.60881861892,counter 1 __best__ 
+Epoch 61 Train cost: 4.40575374082 Validation cost: 4.44755320387,counter 1
+Epoch 62 Train cost: 4.36286421953Train mae: 3.65166899052 Validation cost: 4.2257703583 Validation mae 3.50329504577,counter 1 __best__ 
+Epoch 63 Train cost: 4.313538795 Validation cost: 4.36271618116,counter 1
+Epoch 64 Train cost: 4.27569653099Train mae: 3.52716482699 Validation cost: 4.11422050011 Validation mae 3.35857828023,counter 1 __best__ 
+Epoch 65 Train cost: 4.24385585832 Validation cost: 4.4164758046,counter 1
+Epoch 66 Train cost: 4.21879055517Train mae: 3.44244449495 Validation cost: 4.08428455586 Validation mae 3.30028438704,counter 1 __best__ 
+Epoch 67 Train cost: 4.19464737565Train mae: 3.40487398476 Validation cost: 4.07108896773 Validation mae 3.27548792081,counter 0 __best__ 
+Epoch 68 Train cost: 4.16875763453 Validation cost: 4.20581650239,counter 1
+Epoch 69 Train cost: 4.14093788379 Validation cost: 4.15504432424,counter 2
+Epoch 70 Train cost: 4.12527790327 Validation cost: 4.18763075849,counter 3
+Epoch 71 Train cost: 4.10612944986Train mae: 3.27358744515 Validation cost: 3.94247728086 Validation mae 3.10568736187,counter 3 __best__ 
+Epoch 72 Train cost: 4.08406101276 Validation cost: 4.1032663991,counter 1
+Epoch 73 Train cost: 4.06416100563 Validation cost: 4.04826724867,counter 2
+Epoch 74 Train cost: 4.05037761367 Validation cost: 3.98060665811,counter 3
+Epoch 75 Train cost: 4.03095953807Train mae: 3.16718821885 Validation cost: 3.8568581766 Validation mae 2.99048749099,counter 3 __best__ 
+Epoch 76 Train cost: 4.01816731401 Validation cost: 4.08433386626,counter 1
+Epoch 77 Train cost: 4.00117255206Train mae: 3.12341089942 Validation cost: 3.83656099786 Validation mae 2.95555981309,counter 1 __best__ 
+Epoch 78 Train cost: 3.9827193266 Validation cost: 4.06972333486,counter 1
+Epoch 79 Train cost: 3.97021704112 Validation cost: 3.87542882388,counter 2
+Epoch 80 Train cost: 3.95740565019 Validation cost: 3.93817659387,counter 3
+Epoch 81 Train cost: 3.93745883668Train mae: 3.03264703738 Validation cost: 3.75559395161 Validation mae 2.84783362214,counter 3 __best__ 
+Epoch 82 Train cost: 3.92886492771 Validation cost: 3.812210757,counter 1
+Epoch 83 Train cost: 3.90230646921 Validation cost: 4.00140367465,counter 2
+Epoch 84 Train cost: 3.90640514509 Validation cost: 3.93173195895,counter 3
+Epoch 85 Train cost: 3.88492482287 Validation cost: 3.79914704695,counter 4
+Epoch 86 Train cost: 3.88281615941 Validation cost: 3.83250763637,counter 5
+Epoch 87 Train cost: 3.86715575635 Validation cost: 3.85083789774,counter 6
+Epoch 88 Train cost: 3.85976024908 Validation cost: 3.93112079518,counter 7
+Epoch 89 Train cost: 3.85681935886 Validation cost: 3.98730234106,counter 8
+Epoch 90 Train cost: 3.84522704712 Validation cost: 3.99366096956,counter 9
+Epoch 91 Train cost: 3.84034358033 Validation cost: 4.00770991792,counter 10
+Epoch 92 Train cost: 3.82787398779Train mae: 2.87338903291 Validation cost: 3.77305931586 Validation mae 2.81820755645,counter 10 __best__ 
+Epoch 93 Train cost: 3.82835106327Train mae: 2.87160864121 Validation cost: 3.75376123921 Validation mae 2.79615163664,counter 0 __best__ 
+Epoch 94 Train cost: 3.81906979831 Validation cost: 3.78713540171,counter 1
+Epoch 95 Train cost: 3.8187612283Train mae: 2.85726454664 Validation cost: 3.62579896153 Validation mae 2.66362586345,counter 1 __best__ 
+Epoch 96 Train cost: 3.81047658794 Validation cost: 3.73522659832,counter 1
+Epoch 97 Train cost: 3.80595068588 Validation cost: 3.75532011069,counter 2
+Epoch 98 Train cost: 3.80438471431 Validation cost: 3.70762177127,counter 3
+Epoch 99 Train cost: 3.79656135968 Validation cost: 3.65305003914,counter 4
+Epoch 100 Train cost: 3.79083166112 Validation cost: 3.68648514426,counter 5
+Epoch 101 Train cost: 3.7933386908 Validation cost: 3.84183841271,counter 6
+Epoch 102 Train cost: 3.78443445053 Validation cost: 3.91084610615,counter 7
+Epoch 103 Train cost: 3.78243260155 Validation cost: 3.73937132446,counter 8
+Epoch 104 Train cost: 3.78241272315 Validation cost: 3.68620867209,counter 9
+Epoch 105 Train cost: 3.77943568815 Validation cost: 3.67560541277,counter 10
+Epoch 106 Train cost: 3.77348051522 Validation cost: 3.71843097721,counter 11
+Epoch 107 Train cost: 3.77133554061 Validation cost: 3.90659717275,counter 12
+Epoch 108 Train cost: 3.76655535496 Validation cost: 3.80216503921,counter 13
+Epoch 109 Train cost: 3.7637641949 Validation cost: 3.92776993442,counter 14
+Epoch 110 Train cost: 3.7655711347 Validation cost: 3.67871714111,counter 15
+Epoch 111 Train cost: 3.75865242382 Validation cost: 3.68656950859,counter 16
+Epoch 112 Train cost: 3.75182720956 Validation cost: 3.67575216641,counter 17
+Epoch 113 Train cost: 3.75475727039 Validation cost: 3.9226095903,counter 18
+Epoch 114 Train cost: 3.75445989412Train mae: 2.76702474774 Validation cost: 3.64945323437 Validation mae 2.66002386459,counter 18 __best__ 
+Epoch 115 Train cost: 3.74548583059 Validation cost: 3.6777720431,counter 1
+Epoch 116 Train cost: 3.74551876391 Validation cost: 3.8247909825,counter 2
+Epoch 117 Train cost: 3.74211629036 Validation cost: 3.7128380059,counter 3
+Epoch 118 Train cost: 3.73848624266 Validation cost: 3.66723912858,counter 4
+Epoch 119 Train cost: 3.74062938828 Validation cost: 3.73151196803,counter 5
+Epoch 120 Train cost: 3.73813593641 Validation cost: 3.81798170986,counter 6
+Epoch 121 Train cost: 3.73128223305 Validation cost: 3.86885958298,counter 7
+Epoch 122 Train cost: 3.72816604621 Validation cost: 3.83424427673,counter 8
+Epoch 123 Train cost: 3.72984556884 Validation cost: 3.75198815313,counter 9
+Epoch 124 Train cost: 3.72545842962Train mae: 2.73012374322 Validation cost: 3.59497844795 Validation mae 2.60001009857,counter 9 __best__ 
+Epoch 125 Train cost: 3.71723127554 Validation cost: 3.76778021884,counter 1
+Epoch 126 Train cost: 3.72827004473 Validation cost: 3.77112037738,counter 2
+Epoch 127 Train cost: 3.71499835048 Validation cost: 3.69513809692,counter 3
+Epoch 128 Train cost: 3.72000805836 Validation cost: 3.72955464157,counter 4
+Epoch 129 Train cost: 3.70993141856 Validation cost: 3.74350420261,counter 5
+Epoch 130 Train cost: 3.7082864774 Validation cost: 3.78644733394,counter 6
+Epoch 131 Train cost: 3.69970914004 Validation cost: 3.74166676939,counter 7
+Epoch 132 Train cost: 3.69783046715 Validation cost: 3.6706156779,counter 8
+Epoch 133 Train cost: 3.6973872624Train mae: 2.6974624756 Validation cost: 3.59564798051 Validation mae 2.59645745555,counter 8 __best__ 
+Epoch 134 Train cost: 3.69546193364 Validation cost: 3.65991753254,counter 1
+Epoch 135 Train cost: 3.68378714619 Validation cost: 3.60283457691,counter 2
+Epoch 136 Train cost: 3.68332413679 Validation cost: 3.61774435064,counter 3
+Epoch 137 Train cost: 3.67965264772Train mae: 2.67900068296 Validation cost: 3.52301655183 Validation mae 2.52324883398,counter 3 __best__ 
+Epoch 138 Train cost: 3.67711386837 Validation cost: 3.67645264943,counter 1
+Epoch 139 Train cost: 3.6776194076 Validation cost: 3.52598777834,counter 2
+Epoch 140 Train cost: 3.67529209977 Validation cost: 3.59176824712,counter 3
+Epoch 141 Train cost: 3.67221186209 Validation cost: 3.6246219206,counter 4
+Epoch 142 Train cost: 3.66881425064Train mae: 2.66678002167 Validation cost: 3.44301933297 Validation mae 2.44152546946,counter 4 __best__ 
+Epoch 143 Train cost: 3.66438271619 Validation cost: 3.76020066897,counter 1
+Epoch 144 Train cost: 3.6670969425 Validation cost: 3.73816481598,counter 2
+Epoch 145 Train cost: 3.66098832266 Validation cost: 3.58485475581,counter 3
+Epoch 146 Train cost: 3.66188601867 Validation cost: 3.73228884534,counter 4
+Epoch 147 Train cost: 3.65379216945 Validation cost: 3.58466808242,counter 5
+Epoch 148 Train cost: 3.6510487564 Validation cost: 3.52886088066,counter 6
+Epoch 149 Train cost: 3.65110793989 Validation cost: 3.63397911409,counter 7
+Epoch 150 Train cost: 3.64668923206 Validation cost: 3.62136937655,counter 8
+Epoch 151 Train cost: 3.64236212332 Validation cost: 3.71296943185,counter 9
+Epoch 152 Train cost: 3.64395338793 Validation cost: 3.75725559814,counter 10
+Epoch 153 Train cost: 3.63626982383 Validation cost: 3.55018454534,counter 11
+Epoch 154 Train cost: 3.64328195838 Validation cost: 3.71706618694,counter 12
+Epoch 155 Train cost: 3.63870187136 Validation cost: 3.67147457175,counter 13
+Epoch 156 Train cost: 3.63410812483 Validation cost: 3.65213050664,counter 14
+Epoch 157 Train cost: 3.63169394973 Validation cost: 3.65222146011,counter 15
+Epoch 158 Train cost: 3.63574569365 Validation cost: 3.64358056809,counter 16
+Epoch 159 Train cost: 3.62891860244 Validation cost: 3.47410051588,counter 17
+Epoch 160 Train cost: 3.63329980807 Validation cost: 3.47889406687,counter 18
+Epoch 161 Train cost: 3.62156047278 Validation cost: 3.67599986253,counter 19
+Epoch 162 Train cost: 3.6289617178 Validation cost: 3.50065410129,counter 20
+Epoch 163 Train cost: 3.63076171758 Validation cost: 3.6140457635,counter 21
+Epoch 164 Train cost: 3.62566842025 Validation cost: 3.75093751018,counter 22
+Epoch 165 Train cost: 3.62100747097 Validation cost: 3.62985688245,counter 23
+Epoch 166 Train cost: 3.61886714393Train mae: 2.61387176142 Validation cost: 3.43365166532 Validation mae 2.42903937027,counter 23 __best__ 
+Epoch 167 Train cost: 3.61409828995 Validation cost: 3.61527564133,counter 1
+Epoch 168 Train cost: 3.62330727191 Validation cost: 3.73153110868,counter 2
+Epoch 169 Train cost: 3.61274317337 Validation cost: 3.59746178275,counter 3
+Epoch 170 Train cost: 3.61598035425 Validation cost: 3.64434950928,counter 4
+Epoch 171 Train cost: 3.61969785906 Validation cost: 3.58089762448,counter 5
+Epoch 172 Train cost: 3.61115953098 Validation cost: 3.72968380884,counter 6
+Epoch 173 Train cost: 3.61360752074 Validation cost: 3.48562723811,counter 7
+Epoch 174 Train cost: 3.6105993756 Validation cost: 3.45955777132,counter 8
+Epoch 175 Train cost: 3.60568767171 Validation cost: 3.48625387634,counter 9
+Epoch 176 Train cost: 3.60941546694Train mae: 2.60356515645 Validation cost: 3.30240120859 Validation mae 2.2976134064,counter 9 __best__ 
+Epoch 177 Train cost: 3.60832770012 Validation cost: 3.62102318663,counter 1
+Epoch 178 Train cost: 3.60699456383 Validation cost: 3.7190300737,counter 2
+Epoch 179 Train cost: 3.60577946729 Validation cost: 3.5855416552,counter 3
+Epoch 180 Train cost: 3.60367295079 Validation cost: 3.62505856785,counter 4
+Epoch 181 Train cost: 3.60350366707 Validation cost: 3.56165171281,counter 5
+Epoch 182 Train cost: 3.6018934871 Validation cost: 3.5680160838,counter 6
+Epoch 183 Train cost: 3.59781391302 Validation cost: 3.77976282158,counter 7
+Epoch 184 Train cost: 3.60003394663 Validation cost: 3.61553485069,counter 8
+Epoch 185 Train cost: 3.60327113414 Validation cost: 3.57733074981,counter 9
+Epoch 186 Train cost: 3.59360055638 Validation cost: 3.75868489403,counter 10
+Epoch 187 Train cost: 3.60142131583 Validation cost: 3.50932683093,counter 11
+Epoch 188 Train cost: 3.59303090373 Validation cost: 3.47855735785,counter 12
+Epoch 189 Train cost: 3.59351001757 Validation cost: 3.52393632537,counter 13
+Epoch 190 Train cost: 3.59275885984 Validation cost: 3.72035257823,counter 14
+Epoch 191 Train cost: 3.59361827511 Validation cost: 3.67631104482,counter 15
+Epoch 192 Train cost: 3.5975950238 Validation cost: 3.7808679587,counter 16
+Epoch 193 Train cost: 3.58945169879 Validation cost: 3.60411118306,counter 17
+Epoch 194 Train cost: 3.58793738575 Validation cost: 3.64716191735,counter 18
+Epoch 195 Train cost: 3.5897574433 Validation cost: 3.61855963805,counter 19
+Epoch 196 Train cost: 3.58443062758 Validation cost: 3.62887788897,counter 20
+Epoch 197 Train cost: 3.59362632944 Validation cost: 3.5223446865,counter 21
+Epoch 198 Train cost: 3.58346609371 Validation cost: 3.7238021314,counter 22
+Epoch 199 Train cost: 3.58208100921 Validation cost: 3.61952076369,counter 23
+Epoch 200 Train cost: 3.58907424216 Validation cost: 3.48886203728,counter 24
+Epoch 201 Train cost: 3.58415543764 Validation cost: 3.63990391397,counter 25
+Epoch 202 Train cost: 3.58221639995 Validation cost: 3.7923254591,counter 26
+Epoch 203 Train cost: 3.582622754 Validation cost: 3.36785040878,counter 27
+Epoch 204 Train cost: 3.57890077584 Validation cost: 3.66390702116,counter 28
+Epoch 205 Train cost: 3.57950739603 Validation cost: 3.58619707371,counter 29
+Epoch 206 Train cost: 3.58580250049 Validation cost: 3.6880193636,counter 30
+Exception AttributeError: AttributeError("'NoneType' object has no attribute 'join'",) in <bound method Unlocker.__del__ of <theano.gof.compilelock.Unlocker object at 0x7f1abf889450>> ignored
+Extracting MNIST_data/train-images-idx3-ubyte.gz
+Extracting MNIST_data/train-labels-idx1-ubyte.gz
+Extracting MNIST_data/t10k-images-idx3-ubyte.gz
+Extracting MNIST_data/t10k-labels-idx1-ubyte.gz
