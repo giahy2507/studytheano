@@ -8,6 +8,7 @@ from tensorflow.examples.tutorials.mnist import input_data
 from sys import stderr
 import cPickle
 import os
+from scipy.misc import imread, imsave
 
 if __name__ == "__main__":
 
@@ -66,13 +67,15 @@ if __name__ == "__main__":
     train_model = theano.function(inputs=[X], outputs=[cost, layer3_decode.output, mae],updates=updates)
     valid_model = theano.function(inputs=[X], outputs=[cost, layer3_decode.output, mae])
     show_function = theano.function(inputs=[X], outputs=cost)
+    predict_function = theano.function(inputs=[X], outputs=layer3_decode.output.flatten(2))
     next_images, next_labels = mnist.train.next_batch(batch_size)
 
     counter = 0
     best_valid_err = 100
-    early_stop = 10
+    early_stop = 50
 
     epoch_i = 0
+
 
     while counter < early_stop:
         epoch_i +=1
@@ -97,6 +100,16 @@ if __name__ == "__main__":
             counter +=1
             print >> stderr, "Epoch "+str(epoch_i)+" Train cost: "+ str(np.mean(np.array(train_costs)))+ "Train mae: "+ str(np.mean(np.array(train_maes))) + " Validation cost: "+ str(valid_cost)+" Validation mae "+ str(val_mae)  + ",counter "+str(counter)
 
+
+    # images, labels = mnist.test.next_batch(batch_size)
+    # images_predict = predict_function(images)
+    # for i in range(images.shape[0]):
+    #     img_ori = images[i].reshape((28,28))
+    #     img_pred = images_predict[i].reshape((28,28))
+    #     mse = np.mean(abs(img_ori - img_pred))
+    #     print i, " MSE ", mse
+    #     imsave("images/"+str(i)+"_ori.png",img_ori)
+    #     imsave("images/"+str(i)+"_pred.png",img_ori)
 
 
 
